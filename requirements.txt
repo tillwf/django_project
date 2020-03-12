@@ -159,6 +159,7 @@ scikit-learn==0.18.1
 scipy==0.18.1
 scrape-linkedin==0.1
 seaborn==0.7.1
+setuptools==0.7.3
 sh==1.12.14
 simplegeneric==0.8.1
 singledispatch==3.4.0.3
