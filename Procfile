@@ -1,1 +1,1 @@
-web: gunicorn eco-people.wsgi --log-file -
+web: gunicorn web_site.wsgi --log-file -
