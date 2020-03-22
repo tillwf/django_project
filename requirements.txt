@@ -1,7 +1,5 @@
 absl-py==0.7.1
 alabaster==0.7.9
-anaconda-client==1.6.0
-anaconda-navigator==1.4.3
 appdirs==1.4.3
 appnope==0.1.0
 appscript==1.0.1
@@ -43,6 +41,7 @@ deprecation==2.0.6
 dill==0.2.5
 dj-database-url==0.5.0
 Django==3.0.4
+django-heroku==0.3.1
 docutils==0.13.1
 et-xmlfile==1.0.1
 fastcache==1.0.2
