@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-
+<link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{% static 'web_site/style.css' %}">
 <html lang="fr">
 <head>
@@ -11,12 +11,14 @@
     <nav>
        <ul>
             <li><a href="">Accueil</a></li>
-            <li><a href="">L'idée</a></li>
-            <li><a href="">Le projet</a></li>
+            <li><a href="#projet">Projet</a></li>
             <li><a href="">L'équipe</a></li>
             <li><a href="">Les prochaines étapes</a></li>
+            <li style="float:right"><a href="">Contact</a></li>
        </ul>
    </nav>
+   <a class="link link--takiri" href="#" data-letters="takiri">Passez à l'action</a>
+   <a class="link link--takiri" href="#" data-letters="takiri" id="projet">Le projet</a>
 <footer>footer</footer>
 </body>
 </html>

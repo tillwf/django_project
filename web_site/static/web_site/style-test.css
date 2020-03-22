@@ -1,0 +1,103 @@
+/*pantone :
+#FA944C NEON CARROT
+#47698E QUEEN BLUE
+#F4E4DE MISTY ROSE
+#FBFFFE WHITE
+#FCB573 VERY LIGHT TANGELO
+*/
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: #FBFFFE;
+  color: #47698E;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-color: #47698E;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  background-color: #FA944C;
+}
+
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 8em;
+	line-height: 1;
+	color: #FCB573;
+	display: inline-block;
+}
+
+.link--takiri {
+	font-weight: 900;
+	font-size: 2em;
+    position: relative;
+    margin: 10px;
+	padding: 10px;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.link--takiri:hover {
+	color: white;
+}
+
+.link--takiri::before {
+	content: '';
+	position: absolute;
+	height: 36px;
+	width: 100%;
+	/*top: 50%;*/
+	/*margin-top: -18px;*/
+	/*left: -10%;*/
+	z-index: -1;
+	background: #FA944C;
+	-webkit-transform: rotate3d(0,0,1,0deg) scale3d(0,1,1);
+	transform: rotate3d(0,0,1,0deg) scale3d(0,1,1);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.3s;
+}
+
+.link--takiri:hover::before {
+	-webkit-transform: rotate3d(0,0,1,0deg) scale3d(1,1,1);
+	transform: rotate3d(0,0,1,0deg) scale3d(1,1,1);
+}
+
+.link--takiri span {
+	font-size: 20%;
+	font-weight: 400;
+	position: absolute;
+	/*right: 15px;*/
+	color: #FA944C;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transform: translate3d(-10px,-10px,0);
+	transform: translate3d(-10px,-10px,0);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.link--takiri:hover span {
+	opacity: 1;
+	-webkit-transform: translate3d(,0,0);
+	transform: translate3d(0,0,0);
+}
