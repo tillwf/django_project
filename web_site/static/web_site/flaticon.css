@@ -36,7 +36,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-startup:before { content: "\f100"; }
+.flaticon-startup:before { content: "\f101"; }
 .flaticon-graphic-design:before { content: "\f101"; }
 .flaticon-settings:before { content: "\f102"; }
 .flaticon-idea:before { content: "\f103"; }

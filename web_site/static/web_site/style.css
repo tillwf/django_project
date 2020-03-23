@@ -68,8 +68,8 @@ body:after {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
   .btn.btn-primary {
-    background: #007bff;
-    border-color: #007bff;
+    background-color: transparent;
+    border-color: #fff;
     color: #fff; }
     .btn.btn-primary:hover {
       background: #fff;
