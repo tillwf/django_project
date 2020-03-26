@@ -28,7 +28,7 @@ def signup(request):
 
             current_site = get_current_site(request)
             
-            return render(request, 'login.html')
+            return render(request, 'home.html')
     else:
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})
