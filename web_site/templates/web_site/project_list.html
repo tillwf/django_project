@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Welcome {{ user.username }} !!</p>
+<h1>Projects</h1>
+<ul>
+{% for project in object_list %}
+    <li>{{ project.title}} - {{ project.body }}</li>
+    <p>bgehzehbkezhbkzdhbkdzhbjkbhjkhhhjkhjkbhbjkzhjbk</p>
+{% empty %}
+    <li>No project yet.</li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -19,3 +19,18 @@ def update_user_profile(sender, instance, created, **kwargs):
     if created:
         Profile.objects.create(user=instance)
     instance.profile.save()
+
+STATUS_CHOICES = [
+    ('d', 'Brouillon'),
+    ('p', 'Publié'),
+    ('w', 'Withdrawn'),
+]
+
+class Project(models.Model):
+    title = models.CharField(max_length=100)
+    body = models.TextField()
+    status = models.CharField(max_length=1, choices=STATUS_CHOICES)
+
+    def __str__(self):
+        return self.title
+    

@@ -13,6 +13,11 @@ from django.utils.encoding import force_bytes, force_text
 
 from .forms import SignUpForm
 
+from django.views.generic.list import ListView
+from web_site.models import Project
+
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 # Create your views here.
 
 def landpage(request):
@@ -39,3 +44,11 @@ def home(request):
     return render(request, 'home.html')
 
 
+class ProjectListView(LoginRequiredMixin,ListView):
+
+    model = Project
+    paginate_by = 10  # if pagination is desired
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
